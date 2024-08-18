@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lan='es'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel='stylesheet' href='style.css'>
+		<title>Pet Shelter</title>
+	</head>
+	<body>
+		<header>
+			<div class='header_content'>
+				<div class='header_content_top'>
+					<div>
+						<img src='assets/heart-light.png'>
+						<h2>Pet Shelter</h2>
+					</div>
+					<div>
+						<p><a href='#find'>Find a Pet</a></p>
+						<p><a href='#about'>About</a></p>
+						<button id='button_donate'>Donate</button>
+					</div>
+				</div>
+				<nav>
+					<div class='nav_element'>
+						<label for='select_pet'>I'm looking for a...</label>
+						<img src='assets/paw-light.png'>
+						<select id='select_pet'>
+							<option value='anypet'> Any Pet</option>
+							<option value='dog'> Dog</option>
+							<option value='cat'> Cat</option>
+						</select>
+					</div>
+					<div class='nav_element'>
+						<label for='select_location'>In or near...</label>
+						<img src='assets/pin-light.png'>
+						<input type='text' placeholder=' City or Zip Code' id='select_location'>
+					</div>
+					<div class='nav_element'>
+						<label></label>
+						<button>Find my new best friend</button>
+					</div>
+				</nav>
+			</div>	
+		</header>
+		<div class='main_content'>
+			<section>
+				<img src='assets/pepper.jpg'>
+				<div class='post_info'>
+					<div class='post_header'>
+						<h3>Pepper</h3>
+						<p><span id='post_pettings'>3</span> petting(s)</p>
+					</div>
+					<div class='post_content'>
+						<p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection</p>
+						<button>Pet <span>{dog_name}</span></button>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img src='assets/bruce.jpg'>
+				<div class='post_info'>
+					<div class='post_header'>
+						<h3>Bruce</h3>
+						<p><span id='post_pettings'>3</span> petting(s)</p>
+					</div>
+					<div class='post_content'>
+						<p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+						<button>Pet <span>{dog_name}</span></button>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img src='assets/oscar.jpg'>
+				<div class='post_info'>
+					<div class='post_header'>
+						<h3>Oscar</h3>
+						<p><span id='post_pettings'>3</span> petting(s)</p>
+					</div>
+					<div class='post_content'>
+						<p>Oscar is bright, energetic, and friendly. He is looking for a good home</p>
+						<button>Pet <span>{dog_name}</span></button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+	<script src='script.js'></script>
+</html>
